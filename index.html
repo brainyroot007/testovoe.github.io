@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row add-new">
+            <div class="col-sm-12">
+                <p>Actions</p>
+                <button type="button" class="btn btn-primary add-new-but" data-toggle="modal" data-target="#myModal">Add
+                    new</button>
+            </div>
+        </div>
+        <div class="row table-new">
+            <div class="col-sm-12">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Create</th>
+                            <th>No</th>
+                            <th>Supply</th>
+                            <th>Comment</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="string_add">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Модальное окно -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" class="header_modal" id="myModalLabel">Create Invoice</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputNumber">Number:</label><br>
+                            INV- <input id="inputNumber" type="text" class="inputNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="createDate">Invoice Date:</label>
+                            <input id="createDate" placeholder="01 January 1990" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="supplyDate">Supply Date:</label>
+                            <input id="supplyDate" placeholder="01 January 1990" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment</label>
+                            <textarea class="form-control" id="comment" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary save_data">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

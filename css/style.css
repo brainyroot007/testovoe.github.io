@@ -1,0 +1,23 @@
+body{
+    background: #f2f3f5;
+}
+
+table{
+    margin-top: 15px;
+}
+.container{
+    background: #fff;
+    margin-top: 25px;
+}
+.add-new, .table-new{
+    display: inline-block;
+}
+.add-new p{
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.thead-dark{
+    background: #f2f3f5;
+}
+
